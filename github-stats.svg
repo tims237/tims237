@@ -9,11 +9,11 @@
         aria-labelledby="descId"
       >
         <title id="titleId">Statistiques GitHub de Tim&#39;s, Rank: C</title>
-        <desc id="descId">Total d&#39;&#233;toiles: 2, Total des Commits  : 104, Total des PRs: 3, Nombre total d&#39;incidents: 0, Contribu&#233; &#224; (l&#39;ann&#233;e derni&#232;re): 2</desc>
+        <desc id="descId">Total d&#39;&#233;toiles: 2, Total des Commits  : 105, Total des PRs: 3, Nombre total d&#39;incidents: 0, Contribu&#233; &#224; (l&#39;ann&#233;e derni&#232;re): 2</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
-            fill: #7fd1c7;
+            fill: #22D3EE;
             animation: fadeInAnimation 0.8s ease-in-out forwards;
           }
           @supports(-moz-appearance: auto) {
@@ -22,7 +22,7 @@
           }
           
     .stat {
-      font: 600 14px 'Segoe UI', Ubuntu, "Helvetica Neue", Sans-Serif; fill: #ece6d8;
+      font: 600 14px 'Segoe UI', Ubuntu, "Helvetica Neue", Sans-Serif; fill: #FFFFFF;
     }
     @supports(-moz-appearance: auto) {
       /* Selector detects Firefox */
@@ -33,7 +33,7 @@
       animation: fadeInAnimation 0.3s ease-in-out forwards;
     }
     .rank-text {
-      font: 800 24px 'Segoe UI', Ubuntu, Sans-Serif; fill: #ece6d8;
+      font: 800 24px 'Segoe UI', Ubuntu, Sans-Serif; fill: #FFFFFF;
       animation: scaleInAnimation 0.3s ease-in-out forwards;
     }
     .rank-percentile-header {
@@ -46,18 +46,18 @@
     .not_bold { font-weight: 400 }
     .bold { font-weight: 700 }
     .icon {
-      fill: #7fd1c7;
+      fill: #F472B6;
       display: block;
     }
 
     .rank-circle-rim {
-      stroke: #7fd1c7;
+      stroke: #22D3EE;
       fill: none;
       stroke-width: 6;
       opacity: 0.2;
     }
     .rank-circle {
-      stroke: #7fd1c7;
+      stroke: #22D3EE;
       stroke-dasharray: 250;
       fill: none;
       stroke-width: 6;
@@ -73,7 +73,7 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 234.77845554699815;
+        stroke-dashoffset: 234.75144978446554;
       }
     }
   
@@ -105,6 +105,13 @@
         
         <defs>
           
+          <linearGradient
+            id="gradient"
+            gradientTransform="rotate(135)"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop offset="0%" stop-color="#0C4A6E" />,<stop offset="100%" stop-color="#312E81" />
+          </linearGradient>
           
         </defs>
         
@@ -118,7 +125,7 @@
           height="99%"
           stroke="#e4e2e2"
           width="466"
-          fill="#11151b"
+          fill="url(#gradient)"
           stroke-opacity="0"
         />
 
@@ -184,7 +191,7 @@
         x="274.01"
         y="12.5"
         data-testid="commits"
-      >104</text>
+      >105</text>
     </g>
   </g><g transform="translate(0, 50)">
     <g class="stagger" style="animation-delay: 750ms" transform="translate(25, 0)">
