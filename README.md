@@ -1,8 +1,5 @@
 <!-- Bannière -->
-<p align="center">
-  <img src="avatar.jpg" width="220" alt="Avatar" />
-</p>
-<img src="https://capsule-render.vercel.app/api?type=waving&height=220&color=0:11151b,100:1f4d4a&text=Elvis%20Noubissie&fontColor=ece6d8&fontSize=56&fontAlignY=38&desc=Data%20%26%20IA%20%7C%20Pipelines%2C%20mod%C3%A8les%20et%20dashboards&descAlignY=58&descSize=18&animation=fadeIn" width="100%" alt="Elvis Noubissie" />
+<img src="https://capsule-render.vercel.app/api?type=waving&height=220&color=0:11151b,100:1f4d4a&text=Elvis%20Noubissie&fontColor=ece6d8&fontSize=56&fontAlignY=38&desc=Data%20et%20IA%20%E2%80%94%20Pipelines%2C%20mod%C3%A8les%20et%20dashboards&descAlignY=58&descSize=18&animation=fadeIn" width="100%" alt="Elvis Noubissie" />
 
 <p align="center">
   <img src="https://readme-typing-svg.demolab.com/?font=Bricolage+Grotesque&weight=600&size=22&duration=3500&pause=800&color=7FD1C7&center=true&vCenter=true&width=640&lines=Je+construis+des+pipelines+de+donn%C3%A9es;Machine+learning%2C+dashboards+et+Docker;%C3%89tudiant+Data+%26+IA+%C3%A0+l%27ECE+Paris;En+recherche+d%27alternance+Data+Analyst" alt="Je construis des pipelines de données, du machine learning et des dashboards" />
@@ -103,7 +100,7 @@ Je transforme des données brutes en pipelines, en modèles et en tableaux de bo
 
 <p align="center">
   <img width="420" src="https://raw.githubusercontent.com/tims237/tims237/output/github-stats.svg" alt="Statistiques GitHub" />
-  <img width="420" src="https://streak-stats.demolab.com?user=tims237&hide_border=true&background=11151b&ring=7fd1c7&fire=7fd1c7&currStreakLabel=7fd1c7&sideLabels=ece6d8&currStreakNum=ece6d8&sideNums=ece6d8&dates=8d939c&stroke=2a313c&locale=fr" alt="Série de contributions" />
+  <img width="420" src="https://streak-stats.demolab.com/?user=tims237&amp;hide_border=true&amp;background=11151b&amp;ring=7fd1c7&amp;fire=7fd1c7&amp;currStreakNum=ece6d8&amp;sideNums=ece6d8&amp;currStreakLabel=7fd1c7&amp;sideLabels=7fd1c7&amp;dates=8d939c" alt="Série de contributions" />
 </p>
 
 <p align="center">
