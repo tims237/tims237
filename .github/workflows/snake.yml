@@ -26,7 +26,7 @@ jobs:
         uses: stats-organization/github-readme-stats-action@e856fc8de9d7729b463c468911e232cfbdc3d55e # v2
         with:
           card: stats
-          options: username=${{ github.repository_owner }}&show_icons=true&include_all_commits=true&hide_border=true&bg_color=11151b&title_color=7fd1c7&icon_color=7fd1c7&text_color=ece6d8&rank_icon=github&disable_animations=true&locale=fr
+          options: username=${{ github.repository_owner }}&show_icons=true&include_all_commits=true&hide_border=true&bg_color=135,0C4A6E,312E81&title_color=22D3EE&icon_color=F472B6&text_color=FFFFFF&ring_color=22D3EE&rank_icon=github&disable_animations=true&locale=fr
           path: dist/github-stats.svg
           token: ${{ secrets.GITHUB_TOKEN }}
           fail_on_error: "true"
@@ -35,7 +35,7 @@ jobs:
         uses: stats-organization/github-readme-stats-action@e856fc8de9d7729b463c468911e232cfbdc3d55e # v2
         with:
           card: top-langs
-          options: username=${{ github.repository_owner }}&layout=compact&hide_border=true&bg_color=11151b&title_color=7fd1c7&text_color=ece6d8&langs_count=8&disable_animations=true&locale=fr
+          options: username=${{ github.repository_owner }}&layout=compact&hide_border=true&bg_color=135,0C4A6E,312E81&title_color=22D3EE&text_color=FFFFFF&langs_count=8&disable_animations=true&locale=fr
           path: dist/top-languages.svg
           token: ${{ secrets.GITHUB_TOKEN }}
           fail_on_error: "true"
@@ -45,8 +45,8 @@ jobs:
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-            dist/github-snake.svg?color_snake=#2f7a73&color_dots=#ebedf0,#c6ebe6,#7fd1c7,#2f7a73,#1f4d4a
-            dist/github-snake-dark.svg?palette=github-dark&color_snake=#7fd1c7&color_dots=#161b22,#1f4d4a,#2f7a73,#55a99f,#7fd1c7
+            dist/github-snake.svg?color_snake=#ec4899&color_dots=#ebedf0,#a5f3fc,#22d3ee,#0ea5e9,#6366f1
+            dist/github-snake-dark.svg?palette=github-dark&color_snake=#f472b6&color_dots=#161b22,#0e7490,#06b6d4,#38bdf8,#818cf8
 
       - name: Publier sur la branche output
         uses: crazy-max/ghaction-github-pages@v4
