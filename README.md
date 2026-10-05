@@ -1,4 +1,7 @@
 <!-- Bannière -->
+<p align="center">
+  <img src="avatar.jpg" width="220" alt="Avatar" />
+</p>
 <img src="https://capsule-render.vercel.app/api?type=waving&height=220&color=0:11151b,100:1f4d4a&text=Elvis%20Noubissie&fontColor=ece6d8&fontSize=56&fontAlignY=38&desc=Data%20%26%20IA%20%7C%20Pipelines%2C%20mod%C3%A8les%20et%20dashboards&descAlignY=58&descSize=18&animation=fadeIn" width="100%" alt="Elvis Noubissie" />
 
 <p align="center">
