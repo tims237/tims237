@@ -16,7 +16,7 @@
   <a href="https://www.linkedin.com/in/elvisnoubissie"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=ffffff" alt="LinkedIn" /></a>
   <a href="mailto:thymnoubissie@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=ffffff" alt="Email" /></a>
   <a href="https://github.com/tims237?tab=followers"><img src="https://img.shields.io/github/followers/tims237?style=for-the-badge&logo=github&label=FOLLOW&color=0ea5e9&labelColor=0d1117" alt="Followers GitHub" /></a>
-  <img src="https://komarev.com/ghpvc/?username=tims237&style=for-the-badge&color=6366f1&label=VUES" alt="Vues du profil" />
+   <img src="https://visitor-badge.laobi.icu/badge?page_id=tims237.tims237&left_color=%230d1117&right_color=%236366f1&left_text=VUES" alt="Vues du profil" />
 </p>
 
 ---
