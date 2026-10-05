@@ -1,0 +1,59 @@
+name: Mise à jour des images du profil
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-images
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+    steps:
+      - name: Générer la carte de statistiques
+        uses: stats-organization/github-readme-stats-action@e856fc8de9d7729b463c468911e232cfbdc3d55e # v2
+        with:
+          card: stats
+          options: username=${{ github.repository_owner }}&show_icons=true&include_all_commits=true&hide_border=true&bg_color=11151b&title_color=7fd1c7&icon_color=7fd1c7&text_color=ece6d8&rank_icon=github&disable_animations=true&locale=fr
+          path: dist/github-stats.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: "true"
+
+      - name: Générer la carte des langages
+        uses: stats-organization/github-readme-stats-action@e856fc8de9d7729b463c468911e232cfbdc3d55e # v2
+        with:
+          card: top-langs
+          options: username=${{ github.repository_owner }}&layout=compact&hide_border=true&bg_color=11151b&title_color=7fd1c7&text_color=ece6d8&langs_count=8&disable_animations=true&locale=fr
+          path: dist/top-languages.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: "true"
+
+      - name: Générer l'animation du serpent
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/github-snake.svg?color_snake=#2f7a73&color_dots=#ebedf0,#c6ebe6,#7fd1c7,#2f7a73,#1f4d4a
+            dist/github-snake-dark.svg?palette=github-dark&color_snake=#7fd1c7&color_dots=#161b22,#1f4d4a,#2f7a73,#55a99f,#7fd1c7
+
+      - name: Publier sur la branche output
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+          keep_history: true
+          allow_empty_commit: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
